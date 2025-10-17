@@ -1,4 +1,3 @@
-// Async/await version of fetchPostsWithCallbacks
 async function fetchPostsAsync() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -11,7 +10,6 @@ async function fetchPostsAsync() {
     }
 }
 
-// Async/await version of fetchCommentsWithCallbacks
 async function fetchCommentsAsync() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/comments');
@@ -24,7 +22,6 @@ async function fetchCommentsAsync() {
     }
 }
 
-// Async/await version of fetchUsersWithPromises
 async function fetchUsersAsync() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -43,7 +40,6 @@ async function fetchUsersAsync() {
     }
 }
 
-// Async/await version of fetchTodosWithPromises
 async function fetchTodosAsync() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/todos');
@@ -56,7 +52,6 @@ async function fetchTodosAsync() {
     }
 }
 
-// Execute all async functions
 fetchPostsAsync();
 fetchCommentsAsync();
 fetchUsersAsync();
