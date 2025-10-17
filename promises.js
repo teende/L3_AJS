@@ -1,4 +1,3 @@
-// Function to fetch /users and filter to specific fields using fetch and promises
 function fetchUsersWithPromises() {
     return fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
@@ -11,14 +10,12 @@ function fetchUsersWithPromises() {
         })));
 }
 
-// Function to fetch /todos and filter by completed falsy using fetch and promises
 function fetchTodosWithPromises() {
     return fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
         .then(todos => todos.filter(todo => !todo.completed));
 }
 
-// Example usage with console.log
 fetchUsersWithPromises()
     .then(users => console.log('Filtered users:', users))
     .catch(error => console.error('Error fetching users:', error));
