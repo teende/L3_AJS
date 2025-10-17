@@ -1,4 +1,3 @@
-// Function to fetch /posts and sort by title length descending using XMLHttpRequest
 function fetchPostsWithCallbacks(callback) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
@@ -12,7 +11,6 @@ function fetchPostsWithCallbacks(callback) {
     xhr.send();
 }
 
-// Function to fetch /comments and sort by author name using XMLHttpRequest
 function fetchCommentsWithCallbacks(callback) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/comments', true);
@@ -26,7 +24,6 @@ function fetchCommentsWithCallbacks(callback) {
     xhr.send();
 }
 
-// Example usage with console.log
 fetchPostsWithCallbacks((posts) => {
     console.log('Posts sorted by title length (descending):', posts);
 });
